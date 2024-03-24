@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("The Zen of Python, by Tim Peters\n")
+f = open("/root/zen.py", "r")
+print(f.read())
