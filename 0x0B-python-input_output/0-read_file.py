@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""You are not allowed to import any modules."""
+"""defining read_file function."""
 
 
 def read_file(filename=""):
-"""Prototype for a function that reads files."""
+"""reads filename with utf-8 encoding."""
     with open('""', 'r', encoding="utf-8") as f:
         data = f.readlines()
         print(data)
