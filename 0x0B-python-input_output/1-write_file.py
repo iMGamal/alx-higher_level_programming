@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 """
-
-defining write_file.
+defining write_file function.
 """
+
 
 def write_file(filename="", text=""):
     """
