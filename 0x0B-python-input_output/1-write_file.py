@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-
-"""defining write_file function."""
+"""Defining write_file function."""
 
 
 def write_file(filename="", text=""):
-    """
-    writes filename with utf-8 encoding.
-
+    """Writes filename with utf-8 encoding.
     Return:
     - int: the number of characters written.
     """
