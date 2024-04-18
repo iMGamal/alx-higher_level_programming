@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
+
 """
 Defining a writing function.
+Defining numbers of written characters
 """
 
 
