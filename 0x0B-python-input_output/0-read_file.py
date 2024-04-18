@@ -12,6 +12,6 @@ def read_file(filename=""):
     Returns:
     - str: the result of reading.
     """
-    with open('', 'r', encoding="utf-8") as f:
+    with open('filename=""', 'r', encoding="utf-8") as f:
         data = f.readlines()
         print(data)
