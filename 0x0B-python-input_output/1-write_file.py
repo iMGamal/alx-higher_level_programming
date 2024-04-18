@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 defining write_file function with two arguments.
 """
