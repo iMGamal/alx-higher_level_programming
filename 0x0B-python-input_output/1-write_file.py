@@ -10,7 +10,7 @@ def write_file(filename="", text=""):
     writes filename with utf-8 encoding.
 
     Return:
-    - int; the number of characters written.
+    - int: the number of characters written.
     """
     with open(filename, encoding="utf-8") as f:
     print(f.write(), end="")
