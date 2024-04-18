@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 """
-defining write_file function.
+defining write_file function with two arguments.
 """
-
 
 def write_file(filename="", text=""):
     """
@@ -12,5 +11,5 @@ def write_file(filename="", text=""):
     Return:
     - int: the number of characters written.
     """
-    with open(filename, encoding="utf-8") as f:
-    print(f.write(), end="")
+    with open(filename, 'w', encoding="utf-8") as f:
+    print(f.write(text), end="")
