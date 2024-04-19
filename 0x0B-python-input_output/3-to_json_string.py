@@ -12,6 +12,5 @@ def to_json_string(my_obj):
     Return:
         json (str): JSON represntation of a strong.
     """
-    with open(my_obj, "w", encoding="utf-8") as f:
-        f = '{{"my_obj": "{}"}}'.format(my_obj)
-        return (f.write())
+    json = '{{"my_obj": "{}"}}'.format(my_obj)
+    return (json)
