@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a string-to-JSON function."""
+"""This module provides functions for dealing with JSON data"""
 import json
 
 
