@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import json
 """
-defining a json string.
+defining to_json_string function.
 """
 
 
