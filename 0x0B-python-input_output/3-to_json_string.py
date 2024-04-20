@@ -7,6 +7,6 @@ defining a json string.
 
 def to_json_string(my_obj):
     """
-    returns json represntation of an object (string).
+    serializing an object to json formatted string.
     """
    return (json.dumps(my_obj))
