@@ -12,4 +12,5 @@ def to_json_string(my_obj):
     Return:
         json (str): JSON represntation of a strong.
     """
-    return (my_obj)
+    json = str(my_obj)
+    return (json)
