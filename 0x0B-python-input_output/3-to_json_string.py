@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Module provides functions for dealing with JSON data.
+Module name : json
 """
 import json
 
