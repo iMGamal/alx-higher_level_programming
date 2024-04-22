@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Module for class Rectangle.
+Module that contains class Rectangle, inheritance of class Base
 """
-from base import Base
+from models.base import  Base
 
 
 class Rectangle(Base):
