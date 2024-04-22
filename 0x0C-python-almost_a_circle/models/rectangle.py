@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-"""Module for class Rectangle."""
+"""
+Module for class Rectangle.
+"""
 from base import Base
 
 
