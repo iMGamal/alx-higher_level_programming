@@ -26,6 +26,7 @@ class Rectangle(Base):
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
+        self.__width = value
 
     @property
     def height(self):
@@ -38,6 +39,7 @@ class Rectangle(Base):
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
+        self.__height = value
 
     @property
     def x(self):
@@ -50,6 +52,7 @@ class Rectangle(Base):
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
+        self.__x = value
 
     @property
     def y(self):
@@ -62,6 +65,7 @@ class Rectangle(Base):
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
+        self.__y = value
 
     def validate(self, name, value):
         """Method for validating value"""
