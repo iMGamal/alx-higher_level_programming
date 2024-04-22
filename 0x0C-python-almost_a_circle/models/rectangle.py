@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module for class rectangle."""
-from base import Base
+from /models.base import Base
 
 
 class Rectangle(Base):
@@ -69,3 +69,15 @@ class Rectangle(Base):
     def __str__(self, width, height, x, y, id=None):
         s = '[Rectangle]' + ' ' + '(' + str(self.id) + ')' + ' ' + str(self.x) + '/' + str(self.y) + ' ' + '-' + ' ' + str(self.width) + '/' + str(self.height)
         return (s)
+
+    def update(self, *args, **kwargs):
+        """Method to update rectangle values"""
+        args = (self.id, self.width, self.height, self.x, self.y)
+        kwargs = {}
+        for arg in args:
+            if args != None:
+                index = '[Rectangle]' + ' ' + '(' + str(args[0]) + ')' + ' ' + str(args[3]) + '/' + str(args[4]) + ' ' + '-' + ' ' + str(args[1]) + '/' + str(args[2])
+                return (index)
+            else:
+                index = '[Rectangle]' + ' ' + '(' + str(kwargs[4]) + ')' + ' ' + str(kwargs[2]) + '/' + str(kwargs[3]) + ' ' + '-' + ' ' + str(kwargs[0]) + '/' + str(kwargs[1])
+                return (index)
