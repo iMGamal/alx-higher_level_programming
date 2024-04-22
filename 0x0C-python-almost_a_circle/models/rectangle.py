@@ -66,6 +66,6 @@ class Rectangle(Base):
         """Method to display rectangle"""
         string = (self.width * '#' + '\n') * self.height
         return(string)
-
-r1 = Rectangle(7, 11)
-print(r1.display())
+    def __str__(self, width, height, x, y, id=None):
+        s = '[Rectangle]' + ' ' + '(' + str(self.id) + ')' + ' ' + str(self.x) + '/' + str(self.y) + ' ' + '-' + ' ' + str(self.width) + '/' + str(self.height)
+        return (s)
