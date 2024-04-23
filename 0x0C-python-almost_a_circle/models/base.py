@@ -9,7 +9,7 @@ class Base:
 
     def __init__(self, id=None):
         """class constructor"""
-        if id not None:
+        if id is not None:
             """if condition"""
             self.id = id
         else:
