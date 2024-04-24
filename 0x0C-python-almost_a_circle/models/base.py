@@ -1,18 +1,21 @@
 #!/usr/bin/python3
 
-"""Defining Module for class Base."""
+"""
+Module for class Base.
+"""
 
 
 class Base:
-    """Representing the base of all other classes in out project."""
-    __nb_objects = 0
-
+    """
+    class representing the base of my project.
+    """
     def __init__(self, id=None):
-        """class constructor"""
+        """
+        class constructor.
+        """
+        __nb_objects = 0
         if id is not None:
-            """if condition"""
             self.id = id
         else:
-            """else condition"""
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+            __nb_objects += 1
+            self.id = __nb_objects
