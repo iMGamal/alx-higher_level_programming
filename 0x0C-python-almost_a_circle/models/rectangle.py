@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module that contains class Rectangle, inheritance of class Base."""
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -74,7 +74,7 @@ class Rectangle(Base):
         """
         y setter.
         """
-        self.validate("y", value)
+        self.validate = ("y", value)
         self.__y = value
 
     def validate(self, name, value):
