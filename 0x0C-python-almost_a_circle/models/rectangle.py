@@ -29,8 +29,8 @@ class Rectangle(Base):
         """
         width setter.
         """
-        self.__width = value
         self.validate = ("width", value)
+        self.__width = value
 
     @property
     def height(self):
@@ -44,8 +44,8 @@ class Rectangle(Base):
         """
         height setter.
         """
-        self.__height = value
         self.validate = ("height", value)
+        self.__height = value
 
     @property
     def x(self):
@@ -59,8 +59,8 @@ class Rectangle(Base):
         """
         x setter.
         """
-        self.__x = value
         self.validate = ("x", value)
+        self.__x = value
 
     @property
     def y(self):
