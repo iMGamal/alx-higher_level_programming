@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module that contains class Rectangle, inheritance of class Base."""
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -16,7 +16,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-    
+
     @property
     def width(self):
         """
@@ -67,8 +67,18 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, d):
+    def y(self, value):
         """
         y setter.
         """
-        self.__y = d
+        self.validate("y", value)
+        self.__y = value
+
+    def validate(self, name, value):
+        """
+        validation method.
+        """
+        if type(value) != int:
+            raise TypeError("{} must be an integer".format(name))
+        elif value < 0:
+            raise ValueError("{} must be >= 0".format(value))
