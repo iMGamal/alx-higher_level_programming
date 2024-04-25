@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from base import Base
 """
-Module for class Rectangle that inherits class Base.
+Module for class Base that is inherited by class Rectangle.
 """
 
 
