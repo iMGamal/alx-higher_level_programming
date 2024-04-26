@@ -92,8 +92,10 @@ class Rectangle(Base):
         """
         Method to display attributes.
         """
+        for i in range(self.y):
+            return print()
         for i in range(self.height):
-            print('#' * self.width)
+            print((" " * self.x) + ('#' * self.width))
 
     def __str__(self):
         """
