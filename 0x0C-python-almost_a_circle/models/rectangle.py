@@ -60,6 +60,7 @@ class Rectangle(Base):
         """
         x setter.
         """
+        self.__x = value
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
@@ -86,3 +87,19 @@ class Rectangle(Base):
         Rectangle area calculator.
         """
         return (self.height * self.width)
+
+    def display(self):
+        """
+        Method to display attributes.
+        """
+        for i in range(self.height):
+            print('#' * self.width)
+
+    def __str__(self):
+        """
+        Method that returns string representation of an object.
+        """
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
+r2 = Rectangle(2, 3)
+r2.display()
