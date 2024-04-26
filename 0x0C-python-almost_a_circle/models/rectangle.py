@@ -100,6 +100,3 @@ class Rectangle(Base):
         Method that returns string representation of an object.
         """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
-
-r2 = Rectangle(2, 3)
-r2.display()
