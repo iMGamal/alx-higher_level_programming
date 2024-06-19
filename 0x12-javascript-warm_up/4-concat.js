@@ -7,4 +7,5 @@ if (arg1 && arg2) {
 } else if (arg1) {
   console.log(argv[2] + ' ' + 'is' + ' ' + 'undefined');
 } else if (!arg1 && !arg2) {
-  console.log('undefined' + ' ' + 'is' + ' ' + 'undefined');}
+  console.log('undefined' + ' ' + 'is' + ' ' + 'undefined');
+}
