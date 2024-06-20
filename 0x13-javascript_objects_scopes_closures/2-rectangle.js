@@ -1,17 +1,15 @@
 #!usr/bin/node
 class Rectangle {
-  constructor(w, h); {
-    this.width = w;
-    this.height = h;
-    this.empty = {};
-  }
-  const checkerw = parseInt(width);
-  const checkerh = parseInt(height);
-  if (isNaN(checkerw)) {
-    width = empty;
-  }
-  if (isNan(checkerh)) {
-    height = empty
+  constructor(w, h) {
+    this.width = parseInt(w);
+    this.height = parseInt(h);
+
+    if (this.width <= 0) {
+    this.width = undefined;
+    }
+    if (this.height <= 0) {
+    this.height = undefined;
+    }
   }
 }
 module.exports = Rectangle;
