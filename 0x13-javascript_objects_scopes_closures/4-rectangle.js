@@ -5,30 +5,31 @@ module.exports = class Rectangle {
     this.height = h;
   }
   print() {
-    for (let i = 0; i < this.height; i++) {
-      let x = '';
-      for (let j = 0; j < this.width; j++) {
-        x += 'X';
-      }
-      console.log(x);
-    }
-  }
-  rotate() {
-    for (let i = 0; i < this.width; i++) {
-      let x = '';
-      for (let j = 0; j < this.height; j++) {
-	x += 'X';
-      }
-      console.log(x);
-    }
+   for (let i = 0; i < this.height; i++) {
+     let x = '';
+     for (let j = 0; j < this.width; j++) {
+       x += 'X';
+     }
+     console.log(x);
+   }
   }
   double() {
-    for (let i = 0; i < this.height; i++) {
-      let x = '' + '';
-      for (j = 0; j < this.width; j++) {
-	x += 'X' + 'X';
+   for (let i = 0; i < this.height * 2; i++) {
+     let x = '';
+     for (let j = 0; j < this.width * 2; j++) {
+       x += 'X';
+     }
+     console.log(x);
+   }
+  }
+
+  rotate() {
+    for (let k = 0; k < this.width; k++) {
+      let y = '';
+      for (let l = 0; l < this.height; l++) {
+	y += 'X';
       }
-      console.log(x);
+      console.log(y);
     }
   }
 }
