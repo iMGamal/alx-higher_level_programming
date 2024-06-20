@@ -1,5 +1,5 @@
 #!usr/bin/node
-class Rectangle {
+module.exports = class Rectangle {
   constructor (w, h) {
     this.width = parseInt(w);
     this.height = parseInt(h);
@@ -11,4 +11,3 @@ class Rectangle {
     }
   }
 }
-module.exports = Rectangle;
