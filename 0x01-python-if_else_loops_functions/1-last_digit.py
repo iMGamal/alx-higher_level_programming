@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import random
-number = NULL
+number = random.randint(-10000, 10000)
 n = str(number)
 if n[0] == '-' and int(n[-1]) != 0:
     print(f"Last digit of {number} is -{n[-1]} and is less than 6 and not 0")
