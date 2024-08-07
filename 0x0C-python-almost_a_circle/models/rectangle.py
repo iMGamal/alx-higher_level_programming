@@ -8,8 +8,9 @@ class Rectangle(Base):
     class representing Rectangle.
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """class constructor."""
-        
+        """
+        class constructor.
+        """ 
         super().__init__(id)
         self.width = width
         self.height = height
@@ -22,6 +23,7 @@ class Rectangle(Base):
         Width getter.
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """
@@ -32,12 +34,14 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
+   
     @property
     def height(self):
         """
         height getter.
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """
@@ -48,12 +52,14 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
+
     @property
     def x(self):
         """
         x getter.
         """
         return self.__x
+
     @x.setter
     def x(self, value):
         """
@@ -64,12 +70,14 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
+
     @property
     def y(self):
         """
         y getter.
         """
         return self.__y
+
     @y.setter
     def y(self, value):
         """
@@ -100,7 +108,7 @@ class Rectangle(Base):
         """
         Method that returns string representation of an object.
         """
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return "[{}] ({}) {}/{} - {}/{}".format(Rectangle, self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args):
         """
