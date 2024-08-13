@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 def islower(c):
-    c = c.islower()
-    print(c)
+    if c.islower() == True:
+        return c
+    else:
+        pass
