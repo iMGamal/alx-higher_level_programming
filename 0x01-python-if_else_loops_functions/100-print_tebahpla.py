@@ -4,4 +4,4 @@ for letter in reversed(range(97, 123)):
         letter = chr(letter).upper()
     else:
         letter = chr(letter)
-    print(letter, end="")
+    print("{:s}".format(letter), end="")
