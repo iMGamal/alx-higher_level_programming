@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 from add_0 import add
-result = add(1, 2)
+a = 1
+b = 2
+result = add(a, b)
 if "__name__" == "__main__":
-    print("1 " + "+ " + "2 " + "= " + "{:s}".format(result))
+    print("{:s}".format(a) + " + " + "{:s}".format(b) + " = " + "{:s}".format(result))
