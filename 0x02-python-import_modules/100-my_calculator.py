@@ -5,7 +5,7 @@ from sys import argv
 operators = ['+', '-', '*', '/']
 if __name__ == "__main__":
     if (len(argv) - 1) != 3:
-        print("./100-my_calaculator.py <a> <operator> <b>")
+        print("./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     elif (len(argv) - 1) == 3 and argv[2] not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
