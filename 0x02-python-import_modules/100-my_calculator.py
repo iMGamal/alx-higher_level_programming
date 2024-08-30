@@ -7,6 +7,33 @@ if __name__ == "__main__":
     if (len(argv) - 1) != 3:
         print("Usage: ./100-my_calaculator.py <a> <operator> <b>\n1")
     elif (len(argv) - 1) == 3 and argv[2] not in operators:
-        print("Unknown operator. Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /\n1")
     elif (len(argv) - 1) == 3 and argv[2] in operators:
-        print(str(argv[1]) + " " + str(argv[2]) + " = " + "{:s}".format(str(argv[3])))
+        if argv[2] = '+':
+            result = argv[1] + argv[3]
+            x = argv[1]
+            y = argv[2]
+            z = argv[3]
+            print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
+            print(0)
+        elif argv[2] = '-':
+            result = argv[1] - argv[3]
+            x = argv[1]
+            y = argv[2]
+            z = argv[3]
+            print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
+            print(0)
+        elif argv[2] = '*':
+            result = argv[1] * argv[3]
+            x = argv[1]
+            y = argv[2]
+            z = argv[3]
+            print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
+            print(0)
+        elif argv[2] = '/':
+            result = argv[1] / argv[2]
+            x = argv[1]
+            y = argv[2]
+            z = argv[3]
+            print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
+            print(0)
