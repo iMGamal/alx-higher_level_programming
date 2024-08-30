@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-letters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
-print(*letters, sep="")
+print(*map(chr, range(65, 91)), sep="")
