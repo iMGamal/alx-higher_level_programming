@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 from add_0 import add
+
 a = 1
 b = 2
-result = add(a, b)
-if "__name__" == "__main__":
-    print("{:s}".format(a) + " + " + "{:s}".format(b) + " = " + "{:s}".format(result))
+
+if __name__ == "__main__":
+    result = add(a, b)
+    print(str(a) + " + " + str(b) + " = " + "{:s}".format(str(result)))
