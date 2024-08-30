@@ -10,28 +10,28 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /\n1")
     elif (len(argv) - 1) == 3 and argv[2] in operators:
         if argv[2] == '+':
-            result = add(argv[1], argv[3])
+            result = add(int(argv[1]), int(argv[3]))
             x = argv[1]
             y = argv[2]
             z = argv[3]
             print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
             print(0)
         elif argv[2] == '-':
-            result = sub(argv[1], argv[3])
+            result = sub(int(argv[1]), int(argv[3]))
             x = argv[1]
             y = argv[2]
             z = argv[3]
             print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
             print(0)
         elif argv[2] == '*':
-            result = mul(argv[1], argv[3])
+            result = mul(int(argv[1]), int(argv[3]))
             x = argv[1]
             y = argv[2]
             z = argv[3]
             print(str(x) + " " + str(y) + " " + str(z) + " = " + str(result))
             print(0)
         elif argv[2] == '/':
-            result = div(argv[1], argv[2])
+            result = div(int(argv[1]), int(argv[2]))
             x = argv[1]
             y = argv[2]
             z = argv[3]
