@@ -9,4 +9,4 @@ if __name__ == "__main__":
     elif (len(argv) - 1) == 3 and argv[2] not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
     elif (len(argv) - 1) == 3 and argv[2] in operators:
-        print(str(argv[1]) + " " + str(argv[2]) + " = " + "{:s}".format(str(argv[3]))
+        print(str(argv[1]) + " " + str(argv[2]) + " = " + "{:s}".format(str(argv[3])))
