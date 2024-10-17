@@ -1,2 +1,2 @@
--- Command that deletes a database
-DROP DATABASE IF EXISTS hbtn_0c_0
+/* Command to remove a database if it exists */
+DROP DATABASE IF EXISTS hbtn_0c_0;

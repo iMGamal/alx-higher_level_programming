@@ -1,2 +1,2 @@
--- Command to create a new database
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0
+/* Command to create a database if it doesn't exist */
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
