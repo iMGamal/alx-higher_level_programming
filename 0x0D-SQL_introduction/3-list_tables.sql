@@ -1,2 +1,2 @@
--- Command that lists all databases on server
+-- Command to list all tables in a database
 SHOW TABLES;
