@@ -1,2 +1,2 @@
-/* Command to display all databases on MYSQL */
+-- Command to display all databases on MYSQL
 SHOW DATABASES;
