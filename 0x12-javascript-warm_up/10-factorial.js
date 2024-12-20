@@ -1,13 +1,15 @@
 #!/usr/bin/node
 const factArg = process.argv[2];
+let tempStorage = factArg;
 let factOutput = 1;
 
 function factorialCalc (factArg)
 {
-  if (factArg >= 1 && isNaN(factArg) === false)
+  if (factOutput < factArg && isNaN(factArg) === false)
   {
-    factOutput *= factArg;
-    return factorialCalc(factArg - 1);
+    tempStorage *= factOutput;
+    factOutput++;
+    return factorialCalc(factArg);
   }
   else if (isNaN(factArg) === true)
   {
@@ -16,4 +18,4 @@ function factorialCalc (factArg)
 }
 
 factorialCalc(process.argv[2]);
-console.log(factOutput);
+console.log(tempStorage);
