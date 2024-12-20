@@ -9,6 +9,10 @@ function factorialCalc (factArg)
     factOutput *= factArg;
     return factorialCalc(factArg - 1);
   }
+  else if (isNaN(factArg) === true)
+  {
+    factOutput = 1;
+  }
 }
 
 factorialCalc(process.argv[2]);
